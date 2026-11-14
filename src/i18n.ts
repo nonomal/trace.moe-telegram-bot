@@ -1,0 +1,160 @@
+export interface LocaleStrings {
+  helpBotName: string;
+  helpRevision: string;
+  helpHomepage: string;
+  helpSearchCount: string;
+  helpLanguage: string;
+  helpOptions: string;
+  helpCommandDescription: string;
+  langCommandDescription: string;
+  selectLanguage: string;
+  languageSet: string;
+  apiError: string;
+  apiBusy: string;
+  apiLimitExceeded: string;
+  apiNoResults: string;
+  welcomePrivate: string;
+  welcomeGroup: string;
+  adultResult: string;
+  showLowSimilarityResult: string;
+  resultExpired: string;
+}
+
+export const defaultLocale: LocaleStrings = {
+  helpBotName: "Bot Name: {botName}",
+  helpRevision: "Revision: `{revision}`",
+  helpHomepage: "Homepage: {homepage}",
+  helpSearchCount: "Your search count (last 30 days): `{count}`",
+  helpLanguage: "Language: {language}",
+  helpOptions:
+    "You can include these keyword in caption:\n" +
+    "  `mute` → mute video (as GIF)\n" +
+    "  `nocrop` → disable auto black-border crop\n" +
+    "  `skip` → only return text, without video preview",
+  helpCommandDescription: "Get help and info on how to use trace.moe bot",
+  langCommandDescription: "Change preferred language",
+  selectLanguage: "Please select your preferred language:",
+  languageSet: "Language set to {language}",
+  apiError: "`trace.moe API error, please try again later.`",
+  apiBusy: "`trace.moe server is busy, please try again later.`",
+  apiLimitExceeded: "`You exceeded the search limit, please try again later`",
+  apiNoResults: "No matching results were found from trace.moe",
+  welcomePrivate: "You can Send or Forward anime screenshots to me",
+  welcomeGroup: "Mention me in an anime screenshot, I will tell you what anime is that",
+  adultResult: "I've found an adult result 😳\nPlease forward it to me via Private Chat 😏",
+  showLowSimilarityResult: "Show low similarity result",
+  resultExpired: "This result has expired.",
+};
+
+const zhHansLocale: LocaleStrings = {
+  helpBotName: "机器人名称: {botName}",
+  helpRevision: "版本: `{revision}`",
+  helpHomepage: "主页: {homepage}",
+  helpSearchCount: "您最近 30 天的搜索次数: `{count}`",
+  helpLanguage: "语言: {language}",
+  helpOptions:
+    "您可以在附言中包含以下关键词：\n" +
+    "  `mute` → 静音视频 (变成 GIF)\n" +
+    "  `nocrop` → 禁用自动黑边裁剪\n" +
+    "  `skip` → 仅返回文字，不显示视频预览",
+  helpCommandDescription: "获取帮助和 trace.moe 机器人使用说明",
+  langCommandDescription: "更改首选语言",
+  selectLanguage: "请选择您的首选语言：",
+  languageSet: "语言已设置为 {language}",
+  apiError: "`trace.moe API 错误，请稍后再试。`",
+  apiBusy: "`trace.moe 服务器繁忙，请稍后再试。`",
+  apiLimitExceeded: "`您已超出搜索限制，请稍后再试`",
+  apiNoResults: "无法在 trace.moe 中找到匹配的结果",
+  welcomePrivate: "您可以发送或转发动漫截图给我",
+  welcomeGroup: "在动漫截图中提及我，我会告诉您那是哪部动漫",
+  adultResult: "我找到了一个成人内容结果 😳\n请通过私聊转发给我 😏",
+  showLowSimilarityResult: "显示低相似度结果",
+  resultExpired: "此结果已过期。",
+};
+
+const zhHantLocale: LocaleStrings = {
+  helpBotName: "機器人名稱: {botName}",
+  helpRevision: "版本: `{revision}`",
+  helpHomepage: "主頁: {homepage}",
+  helpSearchCount: "您最近 30 天的搜尋次數: `{count}`",
+  helpLanguage: "語言: {language}",
+  helpOptions:
+    "您可以在附言中包含以下關鍵字：\n" +
+    "  `mute` → 靜音影片 (變成 GIF)\n" +
+    "  `nocrop` → 禁用自動黑邊裁剪\n" +
+    "  `skip` → 僅返回文字，不顯示影片預覽",
+  helpCommandDescription: "獲取幫助和 trace.moe 機器人使用說明",
+  langCommandDescription: "更改偏好語言",
+  selectLanguage: "請選擇您的偏好語言：",
+  languageSet: "語言已設定為 {language}",
+  apiError: "`trace.moe API 錯誤，請稍後再試。`",
+  apiBusy: "`trace.moe 伺服器繁忙，請稍後再試。`",
+  apiLimitExceeded: "`您已超出搜尋限制，請稍後再試`",
+  apiNoResults: "無法在 trace.moe 中找到匹配的結果",
+  welcomePrivate: "您可以發送或轉發動漫截圖給我",
+  welcomeGroup: "在動漫截圖中提及我，我會告訴您那是哪部動漫",
+  adultResult: "我找到了一個成人內容結果 😳\n請通過私聊轉發給我 😏",
+  showLowSimilarityResult: "顯示低相似度結果",
+  resultExpired: "此結果已過期。",
+};
+
+const jaLocale: LocaleStrings = {
+  helpBotName: "ボット名: {botName}",
+  helpRevision: "リビジョン: `{revision}`",
+  helpHomepage: "ホームページ: {homepage}",
+  helpSearchCount: "検索回数 (過去30日間): `{count}`",
+  helpLanguage: "言語: {language}",
+  helpOptions:
+    "キャプションに以下のキーワードを含めることができます：\n" +
+    "  `mute` → 動画をミュート (GIFにして送信)\n" +
+    "  `nocrop` → 自動黒枠クロップを無効化\n" +
+    "  `skip` → 動画プレビューを省略しテキストのみ返信",
+  helpCommandDescription: "ヘルプと trace.moe ボットの使い方を表示",
+  langCommandDescription: "優先言語を変更",
+  selectLanguage: "優先する言語を選択してください：",
+  languageSet: "言語を {language} に設定しました",
+  apiError: "`trace.moe APIエラーが発生しました。時間をおいてもう一度お試しください。`",
+  apiBusy: "`trace.moe サーバーが混雑しています。時間をおいてもう一度お試しください。`",
+  apiLimitExceeded: "`検索制限を超過しました。時間をおいてもう一度お試しください`",
+  apiNoResults: "trace.moe で一致する結果が見つかりませんでした",
+  welcomePrivate: "アニメのスクリーンショットを送信または転送してください",
+  welcomeGroup: "アニメのスクリーンショットで私をメンションすると、どのアニメかお答えします",
+  adultResult: "成人向けの結果が見つかりました 😳\nプライベートチャットで転送してください 😏",
+  showLowSimilarityResult: "類似度の低い結果を表示",
+  resultExpired: "この結果は有効期限が切れました。",
+};
+
+export const locales: Record<string, Partial<LocaleStrings>> = {
+  en: defaultLocale,
+  "zh-hans": zhHansLocale,
+  "zh-cn": zhHansLocale,
+  "zh-sg": zhHansLocale,
+  zh: zhHantLocale,
+  "zh-hant": zhHantLocale,
+  "zh-tw": zhHantLocale,
+  "zh-hk": zhHantLocale,
+  ja: jaLocale,
+};
+
+export const getMappedLocale = (langCode: string | undefined): string => {
+  const code = langCode ? langCode.toLowerCase() : "en";
+  const primaryCode = code.split("-")[0];
+  if (locales[code]) return code;
+  if (locales[primaryCode]) return primaryCode;
+  return "en";
+};
+
+export const getTranslation = (
+  langCode: string | undefined,
+  key: keyof LocaleStrings,
+  params: Record<string, string | number> = {},
+): string => {
+  const code = langCode ? langCode.toLowerCase() : "en";
+  const primaryCode = code.split("-")[0];
+  const strings = locales[code] || locales[primaryCode] || defaultLocale;
+  let text = strings[key] || defaultLocale[key];
+  for (const [paramKey, paramValue] of Object.entries(params)) {
+    text = text.replaceAll(`{${paramKey}}`, String(paramValue));
+  }
+  return text;
+};

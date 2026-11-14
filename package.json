@@ -1,29 +1,40 @@
 {
   "name": "trace.moe-telegram-bot",
-  "version": "2.1.2",
-  "description": "",
-  "main": "server.js",
-  "type": "module",
-  "scripts": {
-    "start": "pm2 start ecosystem.config.json",
-    "stop": "pm2 stop ecosystem.config.json",
-    "restart": "pm2 restart ecosystem.config.json",
-    "reload": "pm2 reload ecosystem.config.json",
-    "delete": "pm2 delete ecosystem.config.json",
-    "prettier": "prettier",
-    "format": "prettier --write \"**/*.js\"",
-    "lint": "prettier --check \"**/*.js\"",
-    "test": "prettier --check \"**/*.js\""
+  "version": "3.0.0",
+  "description": "This Telegram Bot can tell the anime when you send an screenshot to it",
+  "keywords": [
+    "anime",
+    "bot",
+    "telegram",
+    "telegram-bot",
+    "trace.moe"
+  ],
+  "homepage": "https://github.com/soruly/trace.moe-telegram-bot",
+  "bugs": {
+    "url": "https://github.com/soruly/trace.moe-telegram-bot/issues"
   },
-  "author": "soruly",
   "license": "MIT",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "node-fetch": "^2.6.1",
-    "node-telegram-bot-api": "^0.52.0",
-    "redis": "^3.1.1"
+  "author": "soruly",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soruly/trace.moe-telegram-bot.git"
+  },
+  "type": "module",
+  "main": "server.ts",
+  "scripts": {
+    "start": "node --dns-result-order=ipv6first server.ts",
+    "format": "oxfmt",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "test": "oxfmt --check && oxlint"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "@effect-ak/tg-bot-api": "^1.13.0",
+    "@types/node": "^26.6.6",
+    "oxfmt": "^0.78.0",
+    "oxlint": "^1.93.0"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }
